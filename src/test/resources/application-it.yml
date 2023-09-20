@@ -1,0 +1,18 @@
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 12345
+    url: jdbc:postgresql://localhost:5432/unit-testing
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
